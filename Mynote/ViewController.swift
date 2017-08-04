@@ -13,8 +13,8 @@ import UIKit
 class ViewController: UIViewController , UITextViewDelegate ,UINavigationControllerDelegate , UIImagePickerControllerDelegate {
 
     var vc2image:UIImage?
-
-   
+    
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textview: UITextView!
     private var btnCamera:UIButton?
@@ -22,6 +22,8 @@ class ViewController: UIViewController , UITextViewDelegate ,UINavigationControl
     //let app = UIApplication.shared.delegate as! AppDelegate
         
     @IBOutlet weak var put: UIBarButtonItem!
+    
+    
     @IBAction func putdraw(_ sender: Any) {
         
         var attributedString : NSMutableAttributedString!
@@ -116,7 +118,7 @@ class ViewController: UIViewController , UITextViewDelegate ,UINavigationControl
         
         btnPain = UIButton(type: UIButtonType.system)
         btnPain?.frame = CGRect(x: 60, y: 0, width: 40, height: 40)
-        btnPain?.setImage(#imageLiteral(resourceName: "pain.png"), for: UIControlState.normal)
+        btnPain?.setImage(#imageLiteral(resourceName: "brush"), for: UIControlState.normal)
         mytb.addSubview(btnPain!)
         
         btnPain?.addTarget(self, action: #selector(btnpain), for: UIControlEvents.touchUpInside)
@@ -143,9 +145,12 @@ class ViewController: UIViewController , UITextViewDelegate ,UINavigationControl
         
         
     }
+   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         self.textview.resignFirstResponder()
+        
+        
        
     }
 

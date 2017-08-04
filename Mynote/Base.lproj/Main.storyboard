@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Iu-zB-n2B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Iu-zB-n2B">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="135.5" width="375" height="529.5"/>
                                 <color key="backgroundColor" red="0.92650352930458302" green="1" blue="0.7475676580203986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 安安大家好Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 安安大家好Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 安安大家好</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 安安大家好Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 安安大家好Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 安安大家好</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -100,7 +100,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzm-7u-cBg">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="66.5"/>
                                         <color key="backgroundColor" red="0.56128404259999998" green="1" blue="0.8184279109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="pen.png"/>
+                                        <state key="normal" image="pen"/>
                                         <connections>
                                             <action selector="fontsize:" destination="Umz-3e-mnu" eventType="touchUpInside" id="aDs-tN-rUq"/>
                                         </connections>
@@ -108,7 +108,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNe-da-DHA">
                                         <rect key="frame" x="75" y="0.0" width="75" height="66.5"/>
                                         <color key="backgroundColor" red="0.56128404259999998" green="1" blue="0.8184279109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="color.png"/>
+                                        <state key="normal" image="color"/>
                                         <connections>
                                             <action selector="colorcontrol:" destination="Umz-3e-mnu" eventType="touchUpInside" id="5Jr-mj-ezw"/>
                                         </connections>
@@ -121,12 +121,12 @@
                                             <action selector="cleardraw:" destination="Umz-3e-mnu" eventType="touchUpInside" id="As3-Rx-nrh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhn-uq-Jmq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhn-uq-Jmq">
                                         <rect key="frame" x="225" y="0.0" width="75" height="66.5"/>
                                         <color key="backgroundColor" red="0.56128404259999998" green="1" blue="0.8184279109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="undo"/>
+                                        <state key="normal" image="re"/>
                                         <connections>
-                                            <action selector="undodraw:" destination="Umz-3e-mnu" eventType="touchUpInside" id="bI2-xZ-C4p"/>
+                                            <action selector="erase:" destination="Umz-3e-mnu" eventType="touchUpInside" id="Ce3-y3-SBA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPo-aB-CGi">
@@ -153,10 +153,88 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="colorpick" destination="Oj6-CV-Ypa" id="Gjt-y9-9Rb"/>
                         <outlet property="drawwing" destination="E4T-uN-qh1" id="hOp-h9-KzF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdf-74-8WX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Oj6-CV-Ypa">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-vm-Ufg">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                            <state key="normal" title="確認"/>
+                            <connections>
+                                <action selector="OK:" destination="Umz-3e-mnu" eventType="touchUpInside" id="TJ1-pb-Mw1"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qma-KN-gKa">
+                            <rect key="frame" x="0.0" y="96" width="240" height="32"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSY-xr-XO2">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+                                    <state key="normal" image="reddot"/>
+                                    <connections>
+                                        <action selector="redColor:" destination="Umz-3e-mnu" eventType="touchUpInside" id="Sj6-Sl-h3k"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wav-ws-J0N">
+                                    <rect key="frame" x="80" y="0.0" width="80" height="32"/>
+                                    <state key="normal" image="bluedot"/>
+                                    <connections>
+                                        <action selector="blueColor:" destination="Umz-3e-mnu" eventType="touchUpInside" id="CS2-xD-3Zl"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMT-qj-yK0">
+                                    <rect key="frame" x="160" y="0.0" width="80" height="32"/>
+                                    <state key="normal" image="yellowdot"/>
+                                    <connections>
+                                        <action selector="yellowColor:" destination="Umz-3e-mnu" eventType="touchUpInside" id="YDH-ID-9dj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KMW-Eo-ihp">
+                            <rect key="frame" x="0.0" y="48" width="240" height="32"/>
+                            <subviews>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAI-Xc-kHX">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+                                    <state key="normal" image="purpledot"/>
+                                    <connections>
+                                        <action selector="purpleColor:" destination="Umz-3e-mnu" eventType="touchUpInside" id="lQN-Uc-1YU"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSx-CK-sSl">
+                                    <rect key="frame" x="80" y="0.0" width="80" height="32"/>
+                                    <state key="normal" image="black"/>
+                                    <connections>
+                                        <action selector="blackColor:" destination="Umz-3e-mnu" eventType="touchUpInside" id="2fV-Qv-jDv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXr-bC-Kl4">
+                                    <rect key="frame" x="160" y="0.0" width="80" height="32"/>
+                                    <state key="normal" image="greendot"/>
+                                    <connections>
+                                        <action selector="greenColor:" destination="Umz-3e-mnu" eventType="touchUpInside" id="Jes-B7-dmh"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KMW-Eo-ihp" secondAttribute="trailing" id="2Af-PK-Gnr"/>
+                        <constraint firstItem="ujQ-vm-Ufg" firstAttribute="top" secondItem="Oj6-CV-Ypa" secondAttribute="top" id="46n-M7-22c"/>
+                        <constraint firstItem="Qma-KN-gKa" firstAttribute="top" secondItem="KMW-Eo-ihp" secondAttribute="bottom" multiplier="1.2" id="5hN-gT-g44"/>
+                        <constraint firstAttribute="trailing" secondItem="ujQ-vm-Ufg" secondAttribute="trailing" id="9Sc-Am-JqO"/>
+                        <constraint firstAttribute="trailing" secondItem="Qma-KN-gKa" secondAttribute="trailing" id="A4h-du-efZ"/>
+                        <constraint firstItem="Qma-KN-gKa" firstAttribute="leading" secondItem="Oj6-CV-Ypa" secondAttribute="leading" id="bCp-6P-I3k"/>
+                        <constraint firstAttribute="bottom" secondItem="Qma-KN-gKa" secondAttribute="bottom" id="g7u-3E-Ec5"/>
+                        <constraint firstItem="KMW-Eo-ihp" firstAttribute="leading" secondItem="Oj6-CV-Ypa" secondAttribute="leading" id="ggn-iH-pj2"/>
+                        <constraint firstItem="ujQ-vm-Ufg" firstAttribute="leading" secondItem="Oj6-CV-Ypa" secondAttribute="leading" id="uYC-fW-T8b"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="1864.8" y="122.78860569715144"/>
         </scene>
@@ -180,7 +258,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="color.png" width="32" height="32"/>
-        <image name="pen.png" width="32" height="32"/>
+        <image name="black" width="32" height="32"/>
+        <image name="bluedot" width="32" height="32"/>
+        <image name="color" width="32" height="32"/>
+        <image name="greendot" width="32" height="32"/>
+        <image name="pen" width="32" height="32"/>
+        <image name="purpledot" width="32" height="32"/>
+        <image name="re" width="29" height="31"/>
+        <image name="reddot" width="32" height="32"/>
+        <image name="yellowdot" width="32" height="32"/>
     </resources>
 </document>
